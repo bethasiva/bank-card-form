@@ -72,6 +72,9 @@
 
 		.cvv_Outer_container {
 			.card_input_container {
+				.heading{
+					margin: 0;
+				}				
 				.cvv_fields_container {
 					display: flex;
 					align-items: center;
