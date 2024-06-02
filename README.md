@@ -9,7 +9,8 @@
 ## Commands to run the Backend server
 
 ### Step 1: Install Composer (if not installed)
-### `curl -sS https://getcomposer.org/installer | php sudo mv composer.phar /usr/local/bin/composer`
+### `curl -sS https://getcomposer.org/installer -o composer-setup.php`
+### `sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer`
 
 ### Step 2: Navigate to your Laravel project in the server folder
 ### `cd server`
