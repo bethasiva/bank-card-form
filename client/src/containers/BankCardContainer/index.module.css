@@ -1,0 +1,39 @@
+.bank_card_container {
+	user-select: none;
+	max-width: 500px;
+	margin: 30px auto;
+	.bank_card_body {
+		padding: 40px;
+		.bank_card_title {
+			font-size: 24px;
+			margin-bottom: 25px;
+		}
+		.bank_card_main_container {
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+		}
+	}
+
+	input {
+		&::placeholder {
+			color: rgba(143, 144, 166, 1);
+		}
+		&[type="number"]::-webkit-inner-spin-button,
+		&[type="number"]::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.bank_card_container {
+		.bank_card_body {
+			padding: 15px;
+			.bank_card_title {
+				font-size: 22px;
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.bank_card_save_consent {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	.save_card {
+		display: flex;
+		align-items: center;
+		i {
+			margin-left: 3px;
+			color: rgba(199, 201, 217, 1);
+		}
+	}
+
+	.terms_and_conditions {
+		margin: 0 0 0 25px;
+	}
+}
+
+@media (max-width: 576px) {
+	.bank_card_save_consent {
+		.save_card > div {
+			margin: 0;
+		}
+		.terms_and_conditions,
+		.save_card {
+			font-size: 12px;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+.bank_card_saved_details {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	li {
+		button {
+			padding: 0;
+			height: 80px;
+			border-radius: 8px;
+			&.saved_card {
+				display: flex;
+				align-items: end;
+				padding: 10px;
+				width: 116px;
+				background: rgba(102, 152, 250, 1);
+				color: white;
+			}
+			p {
+				white-space: nowrap;
+				margin: 0;
+				letter-spacing: 0.5px;
+			}
+		}
+
+		&.add_new_card {
+			padding: 2px;
+			border-radius: 8px;
+			border: 2px solid rgba(62, 123, 250, 1);
+			button {
+				width: 108px;
+				border: none;
+				background: rgba(242, 242, 245, 1);
+				i {
+					color: rgba(123, 135, 148, 1);
+					font-size: 24px;
+				}
+				p {
+					color: rgba(85, 87, 112, 1);
+					font-weight: 600;
+					span {
+						margin-top: 5px;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

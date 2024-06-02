@@ -1,0 +1,83 @@
+.bank_card_form {
+	display: flex;
+	border-radius: 12px;
+	background: rgba(235, 235, 240, 1);
+	.account_number_and_expiry {
+		background: linear-gradient(135deg, #a6c8ff 0%, #0043ce 100%);
+		border-radius: 12px;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding-top: 45px;
+	}
+
+	.card_input_container {
+		.heading {
+			color: white;
+			font-size: 12px;
+			margin-bottom: 8px;
+			white-space: nowrap;
+		}
+		input {
+			height: 38px;
+			border-radius: 8px;
+			&.error_border{
+				border: 2px solid red;
+			}
+		}
+
+		.expiry_fields_container {
+			display: flex;
+			input {
+				width: 72px;
+			}
+			small {
+				color: white;
+				font-size: 24px;
+				padding-inline: 5px;
+			}
+		}
+	}
+
+	.cvv_Outer_container {
+		padding: 20px;
+		display: flex;
+		align-items: end;
+		border-radius: inherit;
+
+		.card_input_container {
+			.heading {
+				color: rgba(85, 87, 112, 1);
+			}
+			.cvv_fields_container {
+				.cvv_text {
+					margin-top: 8px;
+					p {
+						color: rgba(143, 144, 166, 1);
+						margin: 0;
+						white-space: nowrap;
+						font-size: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	/* Styles for mobile devices */
+	.bank_card_form {
+		display: block;
+
+		.cvv_Outer_container {
+			.card_input_container {
+				.cvv_fields_container {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+				}
+			}
+		}
+	}
+}
